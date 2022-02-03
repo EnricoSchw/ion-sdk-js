@@ -2,6 +2,9 @@
 
 Frontend sdk for the Ion backend.
 
+
+@see: https://pericror.com/software/webrtc-specify-codec-force-codec/
+
 ## Installation
 
 `npm install ion-sdk-js`

@@ -279,6 +279,13 @@ export class LocalStream extends MediaStream {
             c.mimeType.toLowerCase() === `audio/opus`,
         );
       }
+
+      selCodec = cap.codecs.find(
+        (c) =>
+          c.mimeType.toLowerCase() === `video/vp8` ||
+          c.mimeType.toLowerCase() === `audio/opus`,
+      );
+
       if (selCodec) {
         transceiver.setCodecPreferences([selCodec]);
       }
